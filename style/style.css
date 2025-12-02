@@ -1,0 +1,68 @@
+:root {
+  --odd-section-color: oklch(94.5% 0.129 101.54);
+  --rhombus-color: oklch(63.7% 0.237 25.331);
+}
+
+* {
+  box-sizing: border-box; /* by default : content-box*/
+  margin: 0;
+}
+body {
+  height: 100%;
+}
+
+input:focus,
+textarea:focus {
+}
+
+textarea {
+  resize: none;
+}
+
+.show-products-container {
+  padding-top: 100px;
+  visibility: hidden;
+  transition: all 0.3s;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.toast-msg {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background: #3fbf62;
+  padding: 12px 20px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.toast-msg-error {
+  background: #ec4e2c;
+}
+
+.toast-msg.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
