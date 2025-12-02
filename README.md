@@ -4,7 +4,7 @@ A simple, responsive, and interactive product management interface built with **
 This project allows users to **add**, **update**, **delete**, and **search** products dynamically — all on the client side without any backend.
 
 🔗 **Live Demo:**  
-https://abdalla20736.github.io/Dynamic-Add-Product-Form/
+https://abdalla20736.github.io/Product-Entry-App/
 
 ---
 
